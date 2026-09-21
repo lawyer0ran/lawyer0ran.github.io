@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="八尺大人动漫 - 深度解析日本都市传说与恐怖动漫作品，包含角色介绍、剧情分析、经典片段回顾及相关的亚文化解读。">
+    <meta name="keywords" content="八尺大人动漫, 八尺大人, 都市传说动漫, 恐怖动漫, 八尺妃子, 八尺大人同人, 日本怪谈">
+    <title>八尺大人动漫-都市传说与恐怖动漫深度解析平台</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg-color: #0f0f13;
+            --card-bg: #1a1a20;
+            --accent-color: #ff4757;
+            --text-primary: #ffffff;
+            --text-secondary: #a4b0be;
+            --border-color: #2f3542;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(15, 15, 19, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(15,15,19,0.9), rgba(30,30,35,0.8)), url('https://picsum.photos/seed/obakemono/1920/1080') center/cover no-repeat;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #d1d1d1;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #ff6b81;
+            transform: translateY(-2px);
+        }
+
+        /* Introduction */
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .intro-text h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .intro-text p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Character Cards */
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-color: var(--accent-color);
+        }
+
+        .card-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            filter: grayscale(20%);
+            transition: filter 0.3s;
+        }
+
+        .card:hover .card-img {
+            filter: grayscale(0%);
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .card-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background-color: rgba(255, 71, 87, 0.1);
+            color: var(--accent-color);
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+
+        /* Timeline Section */
+        .timeline-container {
+            position: relative;
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 20px 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            width: 70%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            border-left: none;
+            border-right: 4px solid var(--accent-color);
+        }
+
+        .timeline-date {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .timeline-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .timeline-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #131316;
+        }
+
+        .faq-item {
+            background-color: var(--card-bg);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .faq-question:hover {
+            background-color: #22222a;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-secondary);
+            display: none;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-item:not(.active) .faq-question::after {
+            content: '+';
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a0a0c;
+            padding: 50px 0 20px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            text-align: center;
+            color: #666;
+            font-size: 0.85rem;
+            padding-top: 20px;
+            border-top: 1px solid #1f1f25;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            nav ul {
+                display: none; /* Simple hiding for mobile in this demo */
+            }
+
+            .timeline-item, .timeline-item:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .timeline-content {
+                width: 100%;
+                border-left: none;
+                border-right: none;
+                border-top: 4px solid var(--accent-color);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">八尺大人<span>动漫</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#intro" class="active">传说起源</a></li>
+                    <li><a href="#characters">核心角色</a></li>
+                    <li><a href="#timeline">发展历程</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>都市传说中的<br>恐怖美学</h1>
+                <p>探索日本最著名的都市传说“八尺大人”背后的文化隐喻、经典演绎及相关同人创作。</p>
+                <a href="#intro" class="btn">开始探索</a>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section id="intro" class="section">
+            <div class="container">
+                <div class="intro-text">
+                    <h2>什么是八尺大人？</h2>
+                    <p>“八尺大人”是起源于日本秋田县的一个都市传说。该传说描述了一个身高八尺、身穿和服、拥有超自然力量（如瞬间移动、心灵感应）的女性怪物。</p>
+                    <p>随着互联网的发展，这一形象逐渐从单纯的都市传说演变为一种具有独特魅力的亚文化符号，被广泛应用于恐怖小说、动漫、影视作品以及同人创作中。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Character Analysis Section -->
+        <section id="characters" class="section" style="background-color: #131316;">
+            <div class="container">
+                <h2 style="font-size: 2rem; margin-bottom: 40px; text-align: center;">角色解析</h2>
+                <div class="character-grid">
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/obakemono1/400/300" alt="八尺大人形象概念" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">八尺大人</h3>
+                            <span class="tag">核心形象</span>
+                            <span class="tag">超自然</span>
+                            <p class="card-desc">身高超过240厘米，通常被描述为身穿红色和服。她喜欢用低沉的声音询问“你一个人吗？”，并拥有强大的念力，能瞬间移动并制造幻觉。</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/obakemono2/400/300" alt="八尺大人与人类" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">受害者与目击者</h3>
+                            <span class="tag">人类视角</span>
+                            <span class="tag">心理恐怖</span>
+                            <p class="card-desc">在各类动漫和同人作品中，受害者往往处于孤立无援的状态。故事通常侧重于心理层面的压迫感、对未知的恐惧以及最终的逃脱或牺牲。</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/obakemono3/400/300" alt="八尺大人传说背景" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">现代演绎</h3>
+                            <span class="tag">现代改编</span>
+                            <span class="tag">二次创作</span>
+                            <p class="card-desc">现代动漫和游戏常将八尺大人解构为具有悲剧色彩的角色，或者作为强大的BOSS战存在，赋予了其更多的叙事层次和视觉冲击力。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="section">
+            <div class="container">
+                <h2 style="font-size: 2rem; margin-bottom: 40px; text-align: center;">传播历程</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2005年</span>
+                            <h3 class="timeline-title">起源与录音带</h3>
+                            <p class="timeline-desc">八尺大人的传说在秋田县广为流传，最初以匿名录音带的形式出现，其中包含神秘的声音和低沉的台词。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2011年</span>
+                            <h3 class="timeline-title">网络爆发</h3>
+                            <p class="timeline-desc">随着视频网站的兴起，大量以此为题材的恶搞视频和恐怖短片在网络上走红，形象开始标准化。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2012年</span>
+                            <h3 class="timeline-title">影视化改编</h3>
+                            <p class="timeline-desc">日本推出以此为名的恐怖电影，正式将这一都市传说推向主流大众视野，引发广泛讨论。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2016年至今</span>
+                            <h3 class="timeline-title">亚文化沉淀</h3>
+                            <p class="timeline-desc">在动漫、游戏和同人圈中，八尺大人成为了一个标志性IP，衍生出无数同人志、插画和Cosplay作品。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section faq-section">
+            <div class="container">
+                <h2 style="font-size: 2rem; margin-bottom: 40px; text-align: center;">常见问题</h2>
+                <div class="faq-item">
+                    <div class="faq-question">八尺大人是真实的吗？</div>
+                    <div class="faq-answer">
+                        <p>根据目前的调查和学术研究，八尺大人属于典型的“都市传说”。它起源于日本秋田县，后经由互联网传播演变，并非真实存在的超自然生物。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">有哪些著名的动漫或影视作品涉及八尺大人？</div>
+                    <div class="faq-answer">
+                        <p>除了同名日本恐怖电影外，在恐怖动画短片、网络剧以及许多恐怖游戏（如《Project Moon》系列相关作品）中，都能看到八尺大人的身影或其变体。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">为什么八尺大人会突然流行？</div>
+                    <div class="faq-answer">
+                        <p>其流行得益于互联网传播的快速性、其形象符合恐怖美学（高挑、红衣、神秘），以及大众对未知事物的猎奇心理。同时，同人创作的丰富也极大地延长了其生命力。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何安全地观看相关内容？</div>
+                    <div class="faq-answer">
+                        <p>建议选择正规平台观看改编作品。部分网络恶搞视频可能包含惊吓元素，观看时请注意心理承受能力。对于同人创作，请遵守相关法律法规及平台规则。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p style="color: #666; font-size: 0.9rem;">本站致力于提供关于日本都市传说及动漫文化的深度解析与资料整理。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>相关资源</h4>
+                    <ul>
+                        <li><a href="#">都市传说百科</a></li>
+                        <li><a href="#">动漫推荐</a></li>
+                        <li><a href="#">同人图集</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">免责声明</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 八尺大人动漫解析站. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Smooth Scroll for Navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+  </html>
