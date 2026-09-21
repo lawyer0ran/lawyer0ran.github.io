@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>300095-威创股份官方网站：数字会议系统与交互智能平板行业领导者</title>
+    <meta name="description" content="威创股份（300095）致力于数字会议系统、交互智能平板、交互式电子白板及多媒体教学设备的专业研发与生产。提供专业的会议解决方案、教育信息化产品及售后服务，满足政府、教育、企业等多领域需求。">
+    <meta name="keywords" content="300095, 威创股份, 数字会议系统, 交互智能平板, 交互式电子白板, 多媒体教学设备, 威创">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #004494;
+            --accent-color: #ff9900;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --bg-light: #f4f7f9;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            margin-left: 10px;
+            font-size: 14px;
+            color: var(--text-gray);
+            font-weight: 400;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 16px;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .header-actions .btn {
+            padding: 10px 24px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .header-actions .btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e6efff 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-gray);
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .tag {
+            background: rgba(0, 86, 179, 0.1);
+            color: var(--primary-color);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Stats Section */
+        .stats {
+            background-color: var(--white);
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 32px;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .stat-item p {
+            color: var(--text-gray);
+            font-size: 14px;
+        }
+
+        /* Product Solutions */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-gray);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid #eee;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .card-img {
+            height: 200px;
+            background-color: #ddd;
+            position: relative;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: var(--text-gray);
+            margin-bottom: 20px;
+            height: 60px;
+            overflow: hidden;
+        }
+
+        .card-link {
+            color: var(--primary-color);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .card-link::after {
+            content: '→';
+            margin-left: 5px;
+            transition: margin-left 0.2s;
+        }
+
+        .card-link:hover::after {
+            margin-left: 10px;
+        }
+
+        /* Industry Focus */
+        .industry-section {
+            background-color: var(--bg-light);
+        }
+
+        .industry-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .industry-item {
+            display: flex;
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            align-items: center;
+        }
+
+        .industry-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #e6efff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 25px;
+            flex-shrink: 0;
+        }
+
+        .industry-icon svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--primary-color);
+        }
+
+        .industry-info h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .industry-info p {
+            color: var(--text-gray);
+        }
+
+        /* News & Info */
+        .news-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        .news-main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .news-item {
+            display: flex;
+            gap: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            min-width: 80px;
+        }
+
+        .news-date .day {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .news-date .month {
+            font-size: 12px;
+            color: var(--text-gray);
+        }
+
+        .news-content h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .news-content p {
+            font-size: 14px;
+            color: var(--text-gray);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            background: var(--bg-light);
+            padding: 25px;
+            border-radius: var(--border-radius);
+        }
+
+        .sidebar h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .sidebar-list li {
+            margin-bottom: 12px;
+        }
+
+        .sidebar-list a {
+            font-size: 14px;
+            color: var(--text-dark);
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .sidebar-list a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .cta-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .btn-white {
+            background-color: var(--white);
+            color: var(--primary-color);
+            padding: 12px 35px;
+            border-radius: 4px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .btn-white:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #999;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-info h3 {
+            color: var(--white);
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-info p {
+            font-size: 14px;
+            margin-bottom: 10px;
+            max-width: 300px;
+        }
+
+        .footer-links h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .grid-3, .news-grid, .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .industry-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .industry-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .grid-3, .news-grid, .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                300095 <span>威创股份</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#products">产品中心</a></li>
+                    <li><a href="#solutions">解决方案</a></li>
+                    <li><a href="#about">关于威创</a></li>
+                    <li><a href="#news">新闻资讯</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#contact" class="btn">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-tags">
+                    <span class="tag">交互智能平板领导者</span>
+                    <span class="tag">数字会议系统专家</span>
+                    <span class="tag">教育信息化首选</span>
+                </div>
+                <h1>打造沉浸式会议与教学体验</h1>
+                <p>威创股份（300095）专注于为全球用户提供高品质的数字会议系统、交互智能平板及多媒体教学设备。通过先进的显示技术与交互解决方案，赋能高效沟通与智慧教育。</p>
+                <div style="margin-top: 30px;">
+                    <a href="#products" class="btn" style="background-color: var(--primary-color); color: white; padding: 12px 30px; border-radius: 4px; font-weight: 600;">探索产品</a>
+                    <a href="#solutions" class="btn" style="background-color: transparent; color: var(--primary-color); border: 1px solid var(--primary-color); padding: 12px 30px; border-radius: 4px; font-weight: 600; margin-left: 10px;">查看方案</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <h3>20+</h3>
+                    <p>年行业经验</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>合作伙伴</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>产品型号</p>
+                </div>
+                <div class="stat-item">
+                    <h3>30+</h3>
+                    <p>服务网点</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Solutions -->
+        <section id="products" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>核心产品系列</h2>
+                    <p>融合硬件创新与软件生态，提供全方位的显示与交互解决方案</p>
+                </div>
+                <div class="grid-3">
+                    <article class="card">
+                        <div class="card-img">
+                            <img src="https://picsum.photos/seed/tech1/400/300" alt="交互智能平板">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">交互智能平板</h3>
+                            <p class="card-desc">采用先进的红外触控与超短焦投影技术，支持手写批注、无线投屏及多屏互动，适用于会议室、教室及指挥中心。</p>
+                            <a href="#" class="card-link">了解更多</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-img">
+                            <img src="https://picsum.photos/seed/tech2/400/300" alt="数字会议系统">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">数字会议系统</h3>
+                            <p class="card-desc">集会议讨论、投票表决、同声传译及视频会议功能于一体，构建高效、智能的现代化会议环境。</p>
+                            <a href="#" class="card-link">了解更多</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-img">
+                            <img src="https://picsum.photos/seed/tech3/400/300" alt="交互式电子白板">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">交互式电子白板</h3>
+                            <p class="card-desc">耐用、精准的触控白板，配合丰富的教学软件资源，是提升课堂互动性和教学效率的理想工具。</p>
+                            <a href="#" class="card-link">了解更多</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Solutions -->
+        <section id="solutions" class="section industry-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>行业应用解决方案</h2>
+                    <p>针对不同场景的痛点，提供定制化的软硬件一体化服务</p>
+                </div>
+                <div class="industry-list">
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73V19h10v-3.01z"/></svg>
+                        </div>
+                        <div class="industry-info">
+                            <h3>智慧教育</h3>
+                            <p>提供从多媒体教室、创客实验室到智慧校园管理平台的一站式建设方案，助力教育数字化转型。</p>
+                        </div>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        </div>
+                        <div class="industry-info">
+                            <h3>数字会议</h3>
+                            <p>服务于政府、金融、大型企业，提供高清视频会议终端、讨论系统及大屏显示融合系统。</p>
+                        </div>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                        </div>
+                        <div class="industry-info">
+                            <h3>指挥中心</h3>
+                            <p>结合大屏拼接与可视化交互系统，为安防、交通、能源等行业提供实时监控与调度指挥平台。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>新闻动态</h2>
+                    <p>关注威创股份发展，了解行业最新资讯</p>
+                </div>
+                <div class="news-grid">
+                    <div class="news-main">
+                        <article class="news-item">
+                            <div class="news-date">
+                                <span class="day">15</span>
+                                <span class="month">10月</span>
+                            </div>
+                            <div class="news-content">
+                                <h4>威创股份荣获“年度教育信息化创新企业”称号</h4>
+                                <p>在近日举办的2023中国教育信息化大会上，威创股份凭借在交互智能平板及智慧校园解决方案领域的突出贡献，荣获殊荣。</p>
+                            </div>
+                        </article>
+                        <article class="news-item">
+                            <div class="news-date">
+                                <span class="day">02</span>
+                                <span class="month">09月</span>
+                            </div>
+                            <div class="news-content">
+                                <h4>威创股份发布新一代超高清数字会议系统新品</h4>
+                                <p>新品搭载了最新的AI降噪技术与无线投屏技术，旨在为跨国会议及大型企业沟通提供更清晰的音视频保障。</p>
+                            </div>
+                        </article>
+                        <article class="news-item">
+                            <div class="news-date">
+                                <span class="day">28</span>
+                                <span class="month">08月</span>
+                            </div>
+                            <div class="news-content">
+                                <h4>威创股份与多所高校达成校企合作协议</h4>
+                                <p>双方将围绕虚拟仿真实验室建设、科研资源共享及人才培养等方面开展深度合作，共同推动教育科技发展。</p>
+                            </div>
+                        </article>
+                    </div>
+                    <aside class="sidebar">
+                        <h3>热门资讯</h3>
+                        <ul class="sidebar-list">
+                            <li><a href="#">威创股份2023年半年度报告解读</a></li>
+                            <li><a href="#">如何选择适合的交互智能平板尺寸？</a></li>
+                            <li><a href="#">数字会议系统在远程办公中的应用趋势</a></li>
+                            <li><a href="#">威创股份中标某省智慧校园项目</a></li>
+                            <li><a href="#">教育硬件行业市场分析报告</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="cta-section">
+            <div class="container">
+                <h2>立即咨询，获取专属方案</h2>
+                <p>无论您是寻求教育信息化建设，还是需要升级企业会议系统，我们的专家团队都随时准备为您提供支持。</p>
+                <a href="#" class="btn-white">预约演示</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>300095 威创股份</h3>
+                    <p>威创股份（股票代码：300095）致力于成为全球领先的交互显示与信息管理解决方案提供商。</p>
+                    <p>地址：广东省广州市越秀区东风东路836号东峻广场三座</p>
+                    <p>电话：020-83318888</p>
+                </div>
+                <div class="footer-links">
+                    <h4>产品中心</h4>
+                    <ul>
+                        <li><a href="#">交互智能平板</a></li>
+                        <li><a href="#">数字会议系统</a></li>
+                        <li><a href="#">交互式电子白板</a></li>
+                        <li><a href="#">显示拼接墙</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>解决方案</h4>
+                    <ul>
+                        <li><a href="#">智慧教育</a></li>
+                        <li><a href="#">数字会议</a></li>
+                        <li><a href="#">指挥中心</a></li>
+                        <li><a href="#">多媒体教室</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">公司简介</a></li>
+                        <li><a href="#">发展历程</a></li>
+                        <li><a href="#">管理团队</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 威创集团股份有限公司 版权所有 | 粤ICP备XXXXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
