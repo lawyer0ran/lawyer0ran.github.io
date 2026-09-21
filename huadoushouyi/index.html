@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="花都兽医txt下载 - 提供小说花都兽医的在线阅读、章节目录、作者介绍及相关小说推荐。收录都市修真、医术双绝题材作品，方便读者快速找到下载入口与阅读资源。">
+    <meta name="keywords" content="花都兽医,花都兽医txt下载,花都兽医在线阅读,小说下载,都市修真小说">
+    <title>花都兽医txt下载-在线阅读与资源导航</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #2c3e50;
+            --accent-color: #e67e22;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --text-light: #666666;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        .search-box {
+            display: flex;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .search-box input {
+            padding: 8px 15px;
+            border: none;
+            outline: none;
+            width: 200px;
+        }
+
+        .search-box button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0 15px;
+            cursor: pointer;
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, #4a90e2 0%, #67b26f 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* 主体内容网格 */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        /* 左侧内容区 */
+        .content-section {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 30px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--bg-color);
+            color: var(--secondary-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .book-card {
+            display: flex;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .book-card:last-child {
+            border-bottom: none;
+        }
+
+        .book-cover {
+            width: 100px;
+            height: 140px;
+            background-color: #eee;
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+            overflow: hidden;
+        }
+        
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .book-info {
+            flex: 1;
+        }
+
+        .book-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: var(--secondary-color);
+        }
+
+        .book-meta {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+
+        .book-desc {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .book-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 6px 15px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #357abd;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(74, 144, 226, 0.1);
+        }
+
+        /* 右侧侧边栏 */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar-widget {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 20px;
+        }
+
+        .widget-title {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: #f0f2f5;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .tag:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .download-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f5f5f5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .download-list li:last-child {
+            border-bottom: none;
+        }
+
+        .download-list a {
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        .download-list a:hover {
+            color: var(--primary-color);
+        }
+
+        .download-size {
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        /* 底部 */
+        footer {
+            background-color: var(--secondary-color);
+            color: #ccc;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* 简化移动端导航 */
+            }
+            
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .book-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .book-cover {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .book-actions {
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部导航 -->
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <span>📚</span> 阅享资源库
+            </div>
+            <nav class="nav-links">
+                <a href="#" class="active">首页</a>
+                <a href="#">分类浏览</a>
+                <a href="#">排行榜</a>
+                <a href="#">作者专区</a>
+                <a href="#">帮助中心</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索书名、作者...">
+                <button>搜索</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero 区域 -->
+    <section class="hero">
+        <div class="container">
+            <h1>花都兽医txt下载</h1>
+            <p>汇集热门都市修真小说资源，提供高清TXT格式下载与在线阅读。探索医术与异能交织的精彩世界。</p>
+        </div>
+    </section>
+
+    <!-- 主要内容区 -->
+    <main class="container main-grid">
+        
+        <!-- 左侧：书籍详情与推荐 -->
+        <section class="content-section">
+            <div class="section-title">
+                <span>热门推荐</span>
+                <a href="#" style="font-size: 0.9rem; color: var(--primary-color);">查看更多 &gt;</a>
+            </div>
+
+            <!-- 小说卡片 1 -->
+            <article class="book-card">
+                <div class="book-cover">
+                    <!-- 使用 Picsum 生成随机占位图，实际使用时替换为书籍封面 -->
+                    <img src="https://picsum.photos/seed/doctor/200/280" alt="花都兽医封面">
+                </div>
+                <div class="book-info">
+                    <h2 class="book-title">花都兽医</h2>
+                    <div class="book-meta">
+                        <span>作者：鱼人二代</span> | 
+                        <span>分类：都市修真</span> | 
+                        <span>状态：已完结</span>
+                    </div>
+                    <p class="book-desc">
+                        本书讲述了主角杨明作为一名普通的乡村兽医，却意外获得透视、医术和异能。他利用这些特殊能力，在都市中行医救人，同时卷入各种江湖恩怨与情感纠葛。故事融合了都市生活、医术比拼、美女环绕以及热血战斗元素，是一部典型的都市爽文代表作。
+                    </p>
+                    <div class="book-actions">
+                        <button class="btn btn-primary" onclick="alert('即将跳转至下载页面')">立即下载TXT</button>
+                        <button class="btn btn-outline" onclick="alert('即将跳转至在线阅读页面')">在线阅读</button>
+                        <button class="btn btn-outline" onclick="alert('已添加到书架')">加入书架</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 小说卡片 2 -->
+            <article class="book-card">
+                <div class="book-cover">
+                    <img src="https://picsum.photos/seed/doctor2/200/280" alt="都市医圣封面">
+                </div>
+                <div class="book-info">
+                    <h2 class="book-title">都市医圣</h2>
+                    <div class="book-meta">
+                        <span>作者：未知</span> | 
+                        <span>分类：都市异能</span> | 
+                        <span>状态：连载中</span>
+                    </div>
+                    <p class="book-desc">
+                        另外一本在同类题材中非常受欢迎的小说，同样讲述了拥有特殊背景的医生在繁华都市中的传奇经历，与《花都兽医》风格相似，适合喜欢该类型的读者。
+                    </p>
+                    <div class="book-actions">
+                        <button class="btn btn-primary" onclick="alert('即将跳转至下载页面')">立即下载TXT</button>
+                        <button class="btn btn-outline" onclick="alert('即将跳转至在线阅读页面')">在线阅读</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 小说卡片 3 -->
+            <article class="book-card">
+                <div class="book-cover">
+                    <img src="https://picsum.photos/seed/doctor3/200/280" alt="神级医生封面">
+                </div>
+                <div class="book-info">
+                    <h2 class="book-title">神级医生</h2>
+                    <div class="book-meta">
+                        <span>作者：冷月</span> | 
+                        <span>分类：都市生活</span> | 
+                        <span>状态：已完结</span>
+                    </div>
+                    <p class="book-desc">
+                        主角凭借精湛的医术和过人的胆识，在名流圈、商界、黑道之间游刃有余，解决各种疑难杂症，揭开身世之谜。
+                    </p>
+                    <div class="book-actions">
+                        <button class="btn btn-primary" onclick="alert('即将跳转至下载页面')">立即下载TXT</button>
+                        <button class="btn btn-outline" onclick="alert('即将跳转至在线阅读页面')">在线阅读</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- 右侧：侧边栏 -->
+        <aside>
+            <!-- 下载专区 -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">TXT下载专区</h3>
+                <ul class="download-list">
+                    <li>
+                        <a href="#">花都兽医（全集）.txt</a>
+                        <span class="download-size">3.5MB</span>
+                    </li>
+                    <li>
+                        <a href="#">花都兽医（精校版）.txt</a>
+                        <span class="download-size">3.2MB</span>
+                    </li>
+                    <li>
+                        <a href="#">花都兽医（手机版）.txt</a>
+                        <span class="download-size">2.8MB</span>
+                    </li>
+                    <li>
+                        <a href="#">花都兽医（TXT）.rar</a>
+                        <span class="download-size">8.1MB</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 热门标签 -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">热门标签</h3>
+                <div class="tag-cloud">
+                    <a href="#" class="tag">花都兽医</a>
+                    <a href="#" class="tag">都市修真</a>
+                    <a href="#" class="tag">医术</a>
+                    <a href="#" class="tag">小说下载</a>
+                    <a href="#" class="tag">TXT</a>
+                    <a href="#" class="tag">爽文</a>
+                    <a href="#" class="tag">鱼人二代</a>
+                    <a href="#" class="tag">异能</a>
+                </div>
+            </div>
+
+            <!-- 相关推荐 -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">同类推荐</h3>
+                <ul class="download-list">
+                    <li>
+                        <a href="#">天才医生</a>
+                        <span class="download-size">10万+热度</span>
+                    </li>
+                    <li>
+                        <a href="#">超级兵王</a>
+                        <span class="download-size">50万+热度</span>
+                    </li>
+                    <li>
+                        <a href="#">绝世高手</a>
+                        <span class="download-size">20万+热度</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>关于我们</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">
+                        本站致力于为读者提供便捷的小说资源下载服务。我们尊重版权，所有资源均收集自网络，仅供个人学习交流使用，请于下载后24小时内删除。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="#">网站首页</a></li>
+                        <li><a href="#">分类大全</a></li>
+                        <li><a href="#">排行榜单</a></li>
+                        <li><a href="#">投稿中心</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>帮助信息</h3>
+                    <ul>
+                        <li><a href="#">下载常见问题</a></li>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">联系站长</a></li>
+                        <li><a href="#">免责声明</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 阅享资源库. All Rights Reserved. 仅供学习交流使用.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 广告代码 -->
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
