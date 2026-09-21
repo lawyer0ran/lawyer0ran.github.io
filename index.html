@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="甩掉黑道总裁 - 专业阅读平台，提供热门言情小说、现代都市情感故事及摆脱强势男主的爽文推荐。">
+    <meta name="keywords" content="甩掉黑道总裁,言情小说,现代都市,摆脱男主,言情小说推荐">
+    <title>甩掉黑道总裁-热门言情故事与情感解脱指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #e91e63;
+            --secondary-color: #880e4f;
+            --accent-color: #ffcdd2;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --bg-light: #f9f9f9;
+            --white: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .search-btn {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: var(--text-gray);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%);
+            padding: 80px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            margin-bottom: 30px;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .tag {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            border: 1px solid rgba(233, 30, 99, 0.2);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 12px 35px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+            background: var(--secondary-color);
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        /* Section Titles */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .section-header h2 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-header h2::before {
+            content: '';
+            display: block;
+            width: 5px;
+            height: 24px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .view-more {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        .view-more:hover {
+            color: var(--primary-color);
+        }
+
+        /* Book Grid */
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .book-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .book-cover {
+            height: 280px;
+            background-color: #eee;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .book-card:hover .book-cover img {
+            transform: scale(1.05);
+        }
+
+        .book-info {
+            padding: 15px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+            line-height: 1.4;
+        }
+
+        .book-desc {
+            font-size: 0.85rem;
+            color: var(--text-gray);
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex: 1;
+        }
+
+        .book-meta {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        .rating {
+            color: #ffb300;
+            font-weight: bold;
+        }
+
+        .read-btn {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            background: var(--bg-light);
+            color: var(--primary-color);
+            text-align: center;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .read-btn:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 25px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .sidebar-widget h3 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px dashed #eee;
+            font-size: 0.95rem;
+        }
+
+        .list-item:last-child {
+            border-bottom: none;
+        }
+
+        .list-item a:hover {
+            color: var(--primary-color);
+        }
+
+        .list-item .hot-tag {
+            background: #ffebee;
+            color: var(--secondary-color);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-left: 8px;
+        }
+
+        /* Content Section */
+        .content-section {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 40px;
+            box-shadow: var(--shadow);
+            margin-bottom: 60px;
+        }
+
+        .guide-intro {
+            margin-bottom: 40px;
+        }
+
+        .guide-intro h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .guide-intro p {
+            margin-bottom: 15px;
+            color: var(--text-gray);
+            text-align: justify;
+        }
+
+        .guide-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .step-card {
+            background: var(--bg-light);
+            padding: 25px;
+            border-radius: var(--radius);
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .step-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .step-card ul {
+            padding-left: 20px;
+        }
+
+        .step-card li {
+            margin-bottom: 10px;
+            color: var(--text-gray);
+            list-style-type: disc;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #ccc;
+            padding: 50px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 0 15px;
+            }
+
+            nav ul {
+                display: none; /* Simplified for mobile, normally would be a hamburger menu */
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .content-section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span>阅</span> 情感书屋
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">现代言情</a></li>
+                    <li><a href="#">豪门恩怨</a></li>
+                    <li><a href="#">情感解脱</a></li>
+                    <li><a href="#">排行榜</a></li>
+                </ul>
+            </nav>
+            <button class="search-btn" aria-label="搜索">🔍</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>甩掉黑道总裁</h1>
+            <p>探索那些令人窒息的爱情故事，寻找摆脱强势男主的勇气与智慧。这里汇聚了最精彩的情感解脱指南与热门小说。</p>
+            <div class="hero-tags">
+                <span class="tag">#豪门恩怨</span>
+                <span class="tag">#都市情感</span>
+                <span class="tag">#自我成长</span>
+                <span class="tag">#独立女性</span>
+            </div>
+            <a href="#recommendations" class="cta-button">开始阅读</a>
+        </div>
+    </section>
+
+    <main class="container" id="recommendations">
+        <!-- Content Column -->
+        <div class="content-col">
+            <section class="book-section">
+                <div class="section-header">
+                    <h2>热门推荐</h2>
+                    <a href="#" class="view-more">查看更多 &rarr;</a>
+                </div>
+                
+                <div class="book-grid">
+                    <!-- Book 1 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="https://picsum.photos/seed/romance1/300/400" alt="封面">
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">逃离总裁的囚笼</h3>
+                            <p class="book-desc">她以为自己爱上的是温柔绅士，醒来却发现自己签下了卖身契。面对黑道总裁的步步紧逼，她决定不再忍气吞声，开启反击之路。</p>
+                            <div class="book-meta">
+                                <span class="rating">9.2</span>
+                                <span>2.4万人读过</span>
+                            </div>
+                            <a href="#" class="read-btn">立即阅读</a>
+                        </div>
+                    </article>
+
+                    <!-- Book 2 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="https://picsum.photos/seed/romance2/300/400" alt="封面">
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">别来无恙，前男友</h3>
+                            <p class="book-desc">三年前被黑道家族强迫联姻，如今她带着复仇的火焰归来，却发现当年的“黑道总裁”早已洗白，却依然试图掌控她的人生。</p>
+                            <div class="book-meta">
+                                <span class="rating">9.5</span>
+                                <span>5.1万人读过</span>
+                            </div>
+                            <a href="#" class="read-btn">立即阅读</a>
+                        </div>
+                    </article>
+
+                    <!-- Book 3 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="https://picsum.photos/seed/romance3/300/400" alt="封面">
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">独立宣言：我要离婚</h3>
+                            <p class="book-desc">这是一部职场女性如何摆脱依附关系的励志小说。当婚姻变成一座金色的牢笼，她选择用法律和实力捍卫自己的尊严。</p>
+                            <div class="book-meta">
+                                <span class="rating">8.9</span>
+                                <span>1.8万人读过</span>
+                            </div>
+                            <a href="#" class="read-btn">立即阅读</a>
+                        </div>
+                    </article>
+
+                    <!-- Book 4 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="https://picsum.photos/seed/romance4/300/400" alt="封面">
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">夜色微凉，转身离开</h3>
+                            <p class="book-desc">在刀尖上舔血的岁月里，她学会了坚强。面对黑道大佬的深情纠缠，她只想问一句：我们的爱，真的是爱吗？</p>
+                            <div class="book-meta">
+                                <span class="rating">9.1</span>
+                                <span>3.2万人读过</span>
+                            </div>
+                            <a href="#" class="read-btn">立即阅读</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Guide Section -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>情感解脱指南</h2>
+                </div>
+                <div class="guide-intro">
+                    <p>在阅读“甩掉黑道总裁”这类题材时，很多读者往往会被其中的戏剧张力所吸引，但同时也希望能从中汲取现实中的情感处理智慧。面对强势、占有欲强的伴侣，建立健康的边界感是维护自我尊严的第一步。</p>
+                    <div class="guide-steps">
+                        <div class="step-card">
+                            <h3>第一步：建立心理防线</h3>
+                            <ul>
+                                <li>明确自己的底线在哪里，不被对方的威胁或承诺动摇。</li>
+                                <li>意识到“被爱”不等于“被控制”，学会区分情感勒索。</li>
+                                <li>停止自我怀疑，相信自己的直觉和判断。</li>
+                            </ul>
+                        </div>
+                        <div class="step-card">
+                            <h3>第二步：寻找支持系统</h3>
+                            <ul>
+                                <li>不要试图独自应对所有压力，向信任的朋友或家人求助。</li>
+                                <li>必要时咨询心理咨询师，学习健康的沟通方式。</li>
+                                <li>建立属于自己的社交圈，减少对单一关系的依赖。</li>
+                            </ul>
+                        </div>
+                        <div class="step-card">
+                            <h3>第三步：理性规划出路</h3>
+                            <ul>
+                                <li>积累经济独立能力，这是摆脱任何关系的基础。</li>
+                                <li>咨询法律专业人士，了解在极端情况下的自我保护措施。</li>
+                                <li>制定具体的逃离计划，并逐步执行，避免冲动行事。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar Column -->
+        <aside class="sidebar">
+            <!-- Hot Categories -->
+            <div class="sidebar-widget">
+                <h3>热门分类</h3>
+                <div class="list-item">
+                    <a href="#">豪门恩怨</a>
+                    <span>1.2w</span>
+                </div>
+                <div class="list-item">
+                    <a href="#">黑道总裁</a>
+                    <span>9800</span>
+                </div>
+                <div class="list-item">
+                    <a href="#">职场逆袭</a>
+                    <span>8500</span>
+                </div>
+                <div class="list-item">
+                    <a href="#">离婚协议</a>
+                    <span>7200</span>
+                </div>
+                <div class="list-item">
+                    <a href="#">重生复仇</a>
+                    <span class="hot-tag">热门</span>
+                </div>
+            </div>
+
+            <!-- Top Authors -->
+            <div class="sidebar-widget">
+                <h3>热门作者</h3>
+                <div class="list-item">
+                    <a href="#">墨染青衣</a>
+                </div>
+                <div class="list-item">
+                    <a href="#">顾漫风</a>
+                </div>
+                <div class="list-item">
+                    <a href="#">夜色微凉</a>
+                </div>
+                <div class="list-item">
+                    <a href="#">独木舟</a>
+                </div>
+            </div>
+
+            <!-- Ranking -->
+            <div class="sidebar-widget">
+                <h3>本周飙升榜</h3>
+                <div class="list-item">
+                    <a href="#">#1 独立宣言</a>
+                </div>
+                <div class="list-item">
+                    <a href="#">#2 逃离囚笼</a>
+                </div>
+                <div class="list-item">
+                    <a href="#">#3 别来无恙</a>
+                </div>
+                <div class="list-item">
+                    <a href="#">#4 拒绝纠缠</a>
+                </div>
+                <div class="list-item">
+                    <a href="#">#5 破镜重圆</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>关于我们</h4>
+                <p>我们致力于为读者提供高质量的情感文学内容，关注女性成长与情感独立，打造最温暖的阅读社区。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#">网站地图</a></li>
+                    <li><a href="#">读者投稿</a></li>
+                    <li><a href="#">版权声明</a></li>
+                    <li><a href="#">联系客服</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>阅读指南</h4>
+                <ul>
+                    <li><a href="#">如何阅读</a></li>
+                    <li><a href="#">充值中心</a></li>
+                    <li><a href="#">书架管理</a></li>
+                    <li><a href="#">意见反馈</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 情感书屋 版权所有. 本站内容仅供学习交流，请勿用于商业用途。</p>
+        </div>
+    </footer>
+
+</body>
+  </html>
