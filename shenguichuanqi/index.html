@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="神鬼传奇推广id查询与分配平台，提供官方正版游戏推广资源、推广渠道申请及数据分析服务，助力推广员高效获取收益。">
+    <meta name="keywords" content="神鬼传奇推广id,神鬼传奇手游,神鬼传奇推广,游戏推广渠道,手游代理">
+    <title>神鬼传奇推广id-官方授权推广渠道与数据分析平台</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8B0000;
+            --secondary-color: #D4AF37;
+            --bg-dark: #121212;
+            --bg-card: #1E1E1E;
+            --text-main: #E0E0E0;
+            --text-muted: #A0A0A0;
+            --accent-gradient: linear-gradient(135deg, #8B0000 0%, #FF4500 100%);
+            --spacing-unit: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: rgba(18, 18, 18, 0.95);
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--secondary-color);
+        }
+
+        .cta-btn {
+            background: var(--accent-gradient);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(139, 0, 0, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 100px 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(139,0,0,0.2) 0%, rgba(18,18,18,0) 70%);
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* ID Section */
+        .id-section {
+            padding: 80px 0;
+            background-color: #1a1a1a;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+        }
+
+        .id-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .id-card {
+            background-color: var(--bg-card);
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 30px;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .id-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary-color);
+        }
+
+        .id-tag {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--primary-color);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .id-value {
+            font-family: 'Courier New', monospace;
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin: 20px 0;
+            word-break: break-all;
+            background: #000;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px dashed #444;
+        }
+
+        .copy-btn {
+            background: transparent;
+            border: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .copy-btn:hover {
+            background: var(--secondary-color);
+            color: #000;
+        }
+
+        /* Features */
+        .features {
+            padding: 80px 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .feature-item {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--secondary-color);
+        }
+
+        .feature-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .feature-item p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Guide Section */
+        .guide-section {
+            padding: 80px 0;
+            background-color: #1a1a1a;
+        }
+
+        .guide-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .guide-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .guide-steps {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .step {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .step-number {
+            width: 30px;
+            height: 30px;
+            background: var(--secondary-color);
+            color: #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .step h4 {
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .step p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a0a0a;
+            padding: 50px 0 20px;
+            border-top: 1px solid #333;
+            margin-top: 50px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-muted);
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            color: #555;
+            padding-top: 20px;
+            border-top: 1px solid #222;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <span>神鬼传奇推广中心</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">推广ID</a></li>
+                    <li><a href="#">收益查询</a></li>
+                    <li><a href="#">推广工具</a></li>
+                    <li><a href="#">帮助文档</a></li>
+                </ul>
+            </nav>
+            <button class="cta-btn" onclick="window.location.href='#apply'">立即申请</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>神鬼传奇推广ID</h1>
+                <p>官方授权代理推广平台，提供专属推广资源与实时数据追踪。无论您是个人推广员还是团队运营，这里都有您需要的推广工具与丰厚回报。</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>10w+</h3>
+                        <p>累计注册用户</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p>渠道转化率</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>7x24h</h3>
+                        <p>数据实时更新</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ID Distribution Section -->
+        <section class="id-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>官方推广ID列表</h2>
+                    <p>选择您可用的推广渠道，复制ID进行注册或推广</p>
+                </div>
+                <div class="id-card-grid">
+                    <!-- ID Card 1 -->
+                    <div class="id-card">
+                        <span class="id-tag">官方推荐</span>
+                        <h3>渠道 A - 高转化版</h3>
+                        <p style="color: #888; font-size: 14px; margin-bottom: 10px;">适合：社交媒体、短视频平台</p>
+                        <div class="id-value" id="id1">SGQL-2024-X992</div>
+                        <button class="copy-btn" onclick="copyToClipboard('id1')">复制ID</button>
+                    </div>
+                    <!-- ID Card 2 -->
+                    <div class="id-card">
+                        <span class="id-tag">新渠道</span>
+                        <h3>渠道 B - 激励版</h3>
+                        <p style="color: #888; font-size: 14px; margin-bottom: 10px;">适合：游戏论坛、公会招募</p>
+                        <div class="id-value" id="id2">SGQL-B-8821</div>
+                        <button class="copy-btn" onclick="copyToClipboard('id2')">复制ID</button>
+                    </div>
+                    <!-- ID Card 3 -->
+                    <div class="id-card">
+                        <span class="id-tag">PC端</span>
+                        <h3>渠道 C - 桌面端</h3>
+                        <p style="color: #888; font-size: 14px; margin-bottom: 10px;">适合：PC网吧、论坛发帖</p>
+                        <div class="id-value" id="id3">SGQL-PC-3321</div>
+                        <button class="copy-btn" onclick="copyToClipboard('id3')">复制ID</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>推广优势</h2>
+                    <p>为什么选择我们的神鬼传奇推广体系？</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3>官方保障</h3>
+                        <p>数据真实可靠，收益结算透明，杜绝断链与掉单风险。</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3>多端覆盖</h3>
+                        <p>支持iOS、Android及PC客户端，满足不同用户的下载习惯。</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                        <h3>收益丰厚</h3>
+                        <p>阶梯式分成机制，推广人数越多，单人收益越高。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section class="guide-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>推广流程指南</h2>
+                    <p>三步轻松开启您的推广之旅</p>
+                </div>
+                <div class="guide-container">
+                    <div class="guide-content">
+                        <h3>如何有效使用推广ID？</h3>
+                        <p style="margin-bottom: 15px; color: #ccc;">复制上方列表中的推广ID，将其放置在游戏下载链接后，或引导新用户在注册页面输入该ID。系统将自动识别并记录您的推广效果。</p>
+                        <ul style="list-style-type: disc; padding-left: 20px; color: #aaa;">
+                            <li style="margin-bottom: 8px;">确保推广链接指向官方服务器，避免使用非正规分发渠道。</li>
+                            <li style="margin-bottom: 8px;">定期在后台查看注册与付费转化数据。</li>
+                            <li style="margin-bottom: 8px;">对于高价值用户，可联系客服获取专属返点方案。</li>
+                        </ul>
+                    </div>
+                    <div class="guide-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h4>获取ID</h4>
+                                <p>从上方列表中选择适合您推广渠道的ID。</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h4>分发链接</h4>
+                                <p>将ID嵌入到您的文章、论坛或社交动态中。</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h4>查看收益</h4>
+                                <p>用户通过您的ID下载并注册后，收益自动入账。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于推广中心</h4>
+                    <p style="color: #888; font-size: 0.9rem;">我们致力于为神鬼传奇玩家和推广员提供最便捷、最安全的推广服务，打造双赢的生态体系。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">推广规则</a></li>
+                        <li><a href="#">结算说明</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li><a href="#">客服邮箱: support@sgql.com</a></li>
+                        <li><a href="#">商务合作: bd@sgql.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 神鬼传奇推广中心 版权所有. 本页面仅为演示用途，非官方网站。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function copyToClipboard(elementId) {
+            const text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = document.querySelector(`button[onclick="copyToClipboard('${elementId}')"]`);
+                const originalText = btn.innerText;
+                btn.innerText = '已复制';
+                btn.style.borderColor = '#fff';
+                btn.style.color = '#fff';
+                
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.borderColor = '';
+                    btn.style.color = '';
+                }, 2000);
+            }).catch(err => {
+                console.error('无法复制文本: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
